@@ -1,5 +1,9 @@
 # Gentle Brooks
 
+Static site for Gentle Brooks Bathing Service (in-bed bathing care for hospice and bedridden patients). Plain HTML/CSS/JS, no build step — `index.html`, `services.html`, `pricing.html`, `about.html`, `contact.html`, `booking.html`, with shared assets in `assets/`.
+
+Both forms (`booking.html`, `contact.html`) submit directly to Supabase from the browser via `assets/js/forms.js`, using the publishable key below (safe to expose client-side — RLS restricts it to `INSERT` only).
+
 ## Database (Supabase)
 
 Project: **Gentle Brooks** (`nihylsfrwtgaupbbjmdq`, region `ca-central-1`, Postgres 17)

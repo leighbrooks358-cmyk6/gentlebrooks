@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Now | Gentle Brooks Bathing Service</title>
+<meta name="description" content="Schedule a free consultation or bathing care visit with Gentle Brooks Bathing Service.">
+<link rel="icon" type="image/svg+xml" href="assets/images/icon.svg">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<div class="call-strip">
+  Prefer to talk it through? Call <a href="tel:+12533267210">(253) 326-7210</a>
+</div>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/images/icon.svg" alt="" class="brand-mark" aria-hidden="true">
+      <span class="brand-word">Gentle Brooks</span>
+    </a>
+    <div class="nav-flex">
+      <nav class="main-nav" id="mainNav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-primary nav-cta" href="booking.html" aria-current="page">Book a Visit</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" style="padding-bottom:24px;">
+    <div class="container">
+      <div class="hero-inner reveal">
+        <p class="eyebrow">Book a Visit</p>
+        <h1 class="display-1">Let's find a time that works.</h1>
+        <p class="lead">Send a booking request and we'll call you back to schedule. If a hospice team is already involved, let us know so we can coordinate directly with them.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="section-heading reveal">
+        <h2 class="display-2" style="font-size:1.8rem;">Send a booking request</h2>
+        <p class="lead" style="font-size:1rem;">Tell us a bit about your needs and we'll follow up within one business day.</p>
+      </div>
+
+      <!--
+        FORM SUBMISSION: handled by assets/js/forms.js, which inserts
+        submissions directly into the "booking_requests" table in the
+        "Gentle Brooks" Supabase project. See README for details.
+      -->
+      <form class="card-form reveal" id="booking-form">
+        <div class="form-row two-col">
+          <div>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-row two-col">
+          <div>
+            <label for="care-for">Who Needs Care?</label>
+            <select id="care-for" name="care_for">
+              <option>Myself</option>
+              <option>A parent</option>
+              <option>A spouse</option>
+              <option>Another family member</option>
+            </select>
+          </div>
+          <div>
+            <label for="frequency">How Often?</label>
+            <select id="frequency" name="frequency">
+              <option>One-time visit</option>
+              <option>A few times a week</option>
+              <option>Daily</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="hospice">Currently Enrolled in Hospice?</label>
+          <select id="hospice" name="hospice_status">
+            <option>Yes &mdash; and I'd like you to coordinate with them</option>
+            <option>Yes &mdash; not sure about coordination yet</option>
+            <option>No, not currently on hospice</option>
+            <option>Not sure</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="notes">Tell Us About Your Needs</label>
+          <textarea id="notes" name="notes" placeholder="Mobility level, bed-bound status, preferred days/times, hospice provider name if applicable..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Booking Request</button>
+        <p class="form-note">By submitting, you agree to be contacted by Gentle Brooks Bathing Service about your request.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/images/icon.svg" alt="" style="height:28px;width:28px;">
+          <span>Gentle Brooks</span>
+        </div>
+        <p>Gentle, in-bed bathing care for hospice and bedridden patients.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+12533267210">(253) 326-7210</a></li>
+          <li>Mon&ndash;Sun, 7am&ndash;7pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Gentle Brooks Bathing Service. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script type="module" src="assets/js/forms.js"></script>
+</body>
+</html>

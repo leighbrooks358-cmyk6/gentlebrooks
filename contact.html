@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Gentle Brooks Bathing Service</title>
+<meta name="description" content="Get in touch with Gentle Brooks Bathing Service by phone, email, or online form.">
+<link rel="icon" type="image/svg+xml" href="assets/images/icon.svg">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<div class="call-strip">
+  Questions? Call us anytime at <a href="tel:+12533267210">(253) 326-7210</a>
+</div>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/images/icon.svg" alt="" class="brand-mark" aria-hidden="true">
+      <span class="brand-word">Gentle Brooks</span>
+    </a>
+    <div class="nav-flex">
+      <nav class="main-nav" id="mainNav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-primary nav-cta" href="booking.html">Book a Visit</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" style="padding-bottom:24px;">
+    <div class="container">
+      <div class="hero-inner reveal">
+        <p class="eyebrow">Contact</p>
+        <h1 class="display-1">Get in touch.</h1>
+        <p class="lead">Whether you're planning ahead or need help this week, we're happy to answer questions before you book &mdash; no pressure, no obligation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <h2 style="font-size:1.6rem;">Contact Details</h2>
+        <ul class="info-list">
+          <li><span class="glyph">Phone</span><a href="tel:+12533267210">(253) 326-7210</a></li>
+          <li><span class="glyph">Hours</span>Monday &ndash; Sunday, 7am &ndash; 7pm</li>
+          <li><span class="glyph">Area</span>Serving the greater metro area and surrounding communities</li>
+        </ul>
+        <p>Prefer a live calendar? <a href="booking.html">Book directly online</a>.</p>
+      </div>
+
+      <div class="reveal reveal-delay-1">
+        <!--
+          FORM SUBMISSION: handled by assets/js/forms.js, which inserts
+          submissions directly into the "contact_messages" table in the
+          "Gentle Brooks" Supabase project. See README for details.
+        -->
+        <form class="card-form" id="contact-form">
+          <div class="form-row">
+            <label for="c-name">Your Name</label>
+            <input type="text" id="c-name" name="name" required>
+          </div>
+          <div class="form-row">
+            <label for="c-email">Email Address</label>
+            <input type="email" id="c-email" name="email" required>
+          </div>
+          <div class="form-row">
+            <label for="c-message">Message</label>
+            <textarea id="c-message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/images/icon.svg" alt="" style="height:28px;width:28px;">
+          <span>Gentle Brooks</span>
+        </div>
+        <p>Gentle, in-bed bathing care for hospice and bedridden patients.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+12533267210">(253) 326-7210</a></li>
+          <li>Mon&ndash;Sun, 7am&ndash;7pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Gentle Brooks Bathing Service. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script type="module" src="assets/js/forms.js"></script>
+</body>
+</html>
