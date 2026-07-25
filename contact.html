@@ -124,6 +124,24 @@
 </footer>
 
 <script src="assets/js/main.js"></script>
-<script type="module" src="assets/js/forms.js"></script>
+<script>
+(function () {
+  function showFallback(form) {
+    if (!form || form.querySelector('.form-status')) return;
+    var status = document.createElement('p');
+    status.className = 'form-status form-note';
+    status.setAttribute('role', 'status');
+    status.style.color = '#B3261E';
+    status.style.fontWeight = '600';
+    status.textContent = 'Online submission is temporarily unavailable — please call us at (253) 326-7210 instead.';
+    form.appendChild(status);
+  }
+
+  import('./assets/js/forms.js').catch(function () {
+    showFallback(document.getElementById('booking-form'));
+    showFallback(document.getElementById('contact-form'));
+  });
+})();
+</script>
 </body>
 </html>
