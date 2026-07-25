@@ -4,6 +4,13 @@
 
 Project: **Gentle Brooks** (`nihylsfrwtgaupbbjmdq`, region `ca-central-1`, Postgres 17)
 
+- Project URL: `https://nihylsfrwtgaupbbjmdq.supabase.co`
+- Publishable (anon) key: `sb_publishable_BJwmqJJ7xMD2iCmU4vpLiA_QRhgGpqn`
+
+Use these two values as `SUPABASE_URL` / `SUPABASE_ANON_KEY` (or equivalent) in any client app that submits to the tables below. Both tables only grant `INSERT` to the `anon` role — there is no public read/update/delete access.
+
+Schema is version-controlled in [`supabase/migrations`](./supabase/migrations).
+
 ### Schema: `public`
 
 #### `booking_requests`
