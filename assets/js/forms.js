@@ -42,7 +42,7 @@ function wireBookingForm() {
     const { error } = await supabase.from('booking_requests').insert(payload);
 
     if (error) {
-      showFormStatus(form, "Something went wrong sending your request — please call us instead at (253) 326-7210.", true);
+      showFormStatus(form, "Something went wrong sending your request — please call us instead at (253) 465-6704.", true);
       submitBtn.disabled = false;
     } else {
       showFormStatus(form, "Thanks — your booking request was received. We'll follow up within one business day.", false);
@@ -71,7 +71,7 @@ function wireContactForm() {
     const { error } = await supabase.from('contact_messages').insert(payload);
 
     if (error) {
-      showFormStatus(form, "Something went wrong sending your message — please call us instead at (253) 326-7210.", true);
+      showFormStatus(form, "Something went wrong sending your message — please call us instead at (253) 465-6704.", true);
       submitBtn.disabled = false;
     } else {
       showFormStatus(form, "Thanks — your message was received. We'll get back to you soon.", false);
