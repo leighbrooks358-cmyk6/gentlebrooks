@@ -1,3 +1,9 @@
+/* ===========================================================
+   Gentle Brooks — Design System
+   Apple-style restraint & type discipline, Nike-style confidence
+   in color, scale, and calls to action.
+=========================================================== */
+
 :root {
   --ink: #1D1D1F;
   --ink-soft: #6E6E73;
@@ -73,6 +79,7 @@ img { max-width: 100%; display: block; }
 }
 .skip-link:focus { left: 16px; top: 16px; }
 
+/* ---------- Typography scale ---------- */
 .eyebrow {
   display: inline-block;
   font-size: 13px;
@@ -102,6 +109,7 @@ img { max-width: 100%; display: block; }
   max-width: 640px;
 }
 
+/* ---------- Utility bar ---------- */
 .call-strip {
   background: var(--ink);
   color: var(--white);
@@ -113,6 +121,7 @@ img { max-width: 100%; display: block; }
 }
 .call-strip a { color: var(--white); text-decoration: underline; text-underline-offset: 3px; }
 
+/* ---------- Header ---------- */
 .site-header {
   position: sticky;
   top: 0;
@@ -215,6 +224,7 @@ img { max-width: 100%; display: block; }
 .nav-toggle[aria-expanded="true"] .bar:nth-child(2) { opacity: 0; }
 .nav-toggle[aria-expanded="true"] .bar:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
 
+/* ---------- Buttons ---------- */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -253,6 +263,7 @@ img { max-width: 100%; display: block; }
 
 .btn-row { display: flex; gap: 18px; flex-wrap: wrap; align-items: center; }
 
+/* ---------- Sections ---------- */
 section.section { padding: 104px 0; }
 section.section.tight { padding: 72px 0; }
 section.section.alt { background: var(--bg-alt); }
@@ -266,6 +277,7 @@ section.section.accent-block p { color: rgba(255,255,255,0.85); }
 .section-heading { max-width: 680px; margin: 0 0 56px; }
 .section-heading.center { margin-left: auto; margin-right: auto; text-align: center; }
 
+/* ---------- Reveal on scroll ---------- */
 .reveal {
   opacity: 0;
   transform: translateY(28px);
@@ -276,6 +288,7 @@ section.section.accent-block p { color: rgba(255,255,255,0.85); }
 .reveal-delay-2 { transition-delay: 0.16s; }
 .reveal-delay-3 { transition-delay: 0.24s; }
 
+/* ---------- Hero ---------- */
 .hero {
   padding: 88px 0 64px;
 }
@@ -309,6 +322,7 @@ section.section.accent-block p { color: rgba(255,255,255,0.85); }
   margin-top: 6px;
 }
 
+/* ---------- Trust row ---------- */
 .trust-row {
   display: flex;
   justify-content: center;
@@ -337,6 +351,7 @@ section.section.accent-block p { color: rgba(255,255,255,0.85); }
   margin: 0 auto 12px;
 }
 
+/* ---------- Feature rows (editorial) ---------- */
 .feature-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -386,6 +401,7 @@ section.section.accent-block p { color: rgba(255,255,255,0.85); }
   background: var(--accent);
 }
 
+/* ---------- Steps ---------- */
 .steps {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -403,6 +419,7 @@ section.section.accent-block p { color: rgba(255,255,255,0.85); }
 .step h4 { font-size: 1.05rem; margin-bottom: 6px; }
 .step p { color: var(--ink-soft); font-size: 15px; margin: 0; }
 
+/* ---------- Cards (services / pricing) ---------- */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -441,6 +458,7 @@ section.section.accent-block p { color: rgba(255,255,255,0.85); }
   background: var(--accent);
 }
 
+/* ---------- Pricing ---------- */
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -506,6 +524,7 @@ section.section.accent-block p { color: rgba(255,255,255,0.85); }
   font-weight: 700;
 }
 
+/* ---------- Testimonials ---------- */
 .quote-block { max-width: 780px; margin: 0 auto 40px; }
 .quote-block .mark {
   font-size: 4rem;
@@ -528,6 +547,7 @@ section.section.accent-block p { color: rgba(255,255,255,0.85); }
   margin-top: 12px;
 }
 
+/* ---------- CTA banner ---------- */
 .cta-banner { text-align: center; }
 .cta-banner h2 { max-width: 620px; margin-left: auto; margin-right: auto; }
 .cta-banner p.lead { max-width: 520px; margin-left: auto; margin-right: auto; }
@@ -537,6 +557,7 @@ section.section.accent-block p { color: rgba(255,255,255,0.85); }
 .cta-banner .btn-outline { border-color: rgba(255,255,255,0.5); color: var(--white); }
 .cta-banner .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,0.1); }
 
+/* ---------- Forms ---------- */
 .card-form {
   background: var(--white);
   border-radius: var(--radius-lg);
@@ -576,6 +597,7 @@ section.section.accent-block p { color: rgba(255,255,255,0.85); }
 .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .form-note { font-size: 13.5px; color: var(--ink-soft); margin-top: 18px; text-align: center; }
 
+/* ---------- Callout ---------- */
 .callout {
   background: var(--accent-tint);
   border-left: 4px solid var(--accent);
@@ -592,6 +614,7 @@ section.section.accent-block p { color: rgba(255,255,255,0.85); }
   color: rgba(255,255,255,0.9);
 }
 
+/* ---------- Embed box ---------- */
 .embed-box {
   background: var(--bg-alt);
   border: 1.5px dashed var(--line-strong);
@@ -610,6 +633,7 @@ section.section.accent-block p { color: rgba(255,255,255,0.85); }
   border: 1px solid var(--line);
 }
 
+/* ---------- Contact ---------- */
 .contact-grid {
   display: grid;
   grid-template-columns: 0.85fr 1.15fr;
@@ -639,6 +663,7 @@ section.section.accent-block p { color: rgba(255,255,255,0.85); }
 }
 .info-list li > a, .info-list li { display: block; }
 
+/* ---------- Footer ---------- */
 .site-footer {
   background: var(--ink);
   color: rgba(255,255,255,0.6);
@@ -672,6 +697,7 @@ section.section.accent-block p { color: rgba(255,255,255,0.85); }
   color: rgba(255,255,255,0.4);
 }
 
+/* ---------- Responsive ---------- */
 @media (max-width: 920px) {
   .feature-row { grid-template-columns: 1fr; gap: 32px; }
   .feature-row.reverse .feature-visual,

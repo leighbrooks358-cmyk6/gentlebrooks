@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var nav = document.getElementById('mainNav');
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  // Header scroll state
   if (header) {
     var setScrolled = function () {
       header.classList.toggle('is-scrolled', window.scrollY > 8);
@@ -12,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', setScrolled, { passive: true });
   }
 
+  // Full-screen mobile nav
   if (toggle && nav) {
     toggle.addEventListener('click', function () {
       var isOpen = nav.classList.toggle('open');
@@ -28,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // Scroll-reveal
   var revealEls = document.querySelectorAll('.reveal');
   if (reduceMotion || !('IntersectionObserver' in window)) {
     revealEls.forEach(function (el) { el.classList.add('is-visible'); });

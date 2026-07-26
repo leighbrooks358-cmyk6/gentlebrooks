@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 130" role="img" aria-label="Gentle Brooks Bathing Service">
+  <g transform="translate(4,5)">
+    <circle cx="60" cy="60" r="54" fill="none" stroke="#1D1D1F" stroke-width="2"/>
+    <path d="M18 66 C34 50, 46 50, 60 62 C74 74, 86 74, 102 58" fill="none" stroke="#2F6F62" stroke-width="6" stroke-linecap="round"/>
+    <path d="M18 84 C34 68, 46 68, 60 80 C74 92, 86 92, 102 76" fill="none" stroke="#2F6F62" stroke-width="6" stroke-linecap="round" opacity="0.45"/>
+  </g>
+  <text x="140" y="66" font-family="-apple-system, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="38" font-weight="700" fill="#1D1D1F" letter-spacing="-0.5">Gentle Brooks</text>
+  <text x="141" y="92" font-family="-apple-system, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="3" fill="#2F6F62">BATHING SERVICE</text>
+</svg>

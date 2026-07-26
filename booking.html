@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Book Now | Gentle Brooks Bathing Service</title>
-<meta name="description" content="Schedule a bathing care visit with Gentle Brooks Bathing Service.">
+<meta name="description" content="Schedule a free consultation or bathing care visit with Gentle Brooks Bathing Service.">
 <link rel="icon" type="image/svg+xml" href="assets/images/icon.svg">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -12,7 +12,7 @@
 <a class="skip-link" href="#main">Skip to main content</a>
 
 <div class="call-strip">
-  Prefer to talk it through? Call <a href="tel:+12533267210">(253) 326-7210</a>
+  Prefer to talk it through? Call <a href="tel:+12534656704">(253) 465-6704</a>
 </div>
 
 <header class="site-header" id="siteHeader">
@@ -46,14 +46,45 @@
       <div class="hero-inner reveal">
         <p class="eyebrow">Book a Visit</p>
         <h1 class="display-1">Let's find a time that works.</h1>
-        <p class="lead">Send a booking request and we'll call you back to schedule. If a hospice team is already involved, let us know so we can coordinate directly with them.</p>
+        <p class="lead">Choose whichever is easiest &mdash; pick a time on our live calendar, or send a booking request and we'll call you back. If a hospice team is already involved, let us know so we can coordinate directly with them.</p>
       </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Option 1</p>
+        <h2 class="display-2" style="font-size:1.8rem;">Pick a time on our calendar</h2>
+        <p class="lead" style="font-size:1rem;">Real-time availability &mdash; book instantly.</p>
+      </div>
+
+      <!--
+        CALENDLY EMBED:
+        1. Create a free account at https://calendly.com
+        2. Create an event type (e.g. "Free Consultation" or "Bathing Visit")
+        3. Replace YOUR-CALENDLY-LINK below with your real scheduling link,
+           e.g. https://calendly.com/gentle-brooks/consultation
+        4. Uncomment the <div class="calendly-inline-widget"> block and the
+           <script> tag right after it, and delete the .embed-box placeholder.
+      -->
+      <div class="embed-box reveal">
+        <p><strong>Live calendar goes here.</strong></p>
+        <p>Connect a free <a href="https://calendly.com" target="_blank" rel="noopener">Calendly</a> account, then replace this box with:</p>
+        <p><code>&lt;div class="calendly-inline-widget" data-url="https://calendly.com/YOUR-LINK" style="min-width:320px;height:700px;"&gt;&lt;/div&gt;</code></p>
+      </div>
+
+      <!--
+      <div class="calendly-inline-widget" data-url="https://calendly.com/YOUR-CALENDLY-LINK" style="min-width:320px;height:700px;"></div>
+      <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      -->
     </div>
   </section>
 
   <section class="section alt">
     <div class="container">
       <div class="section-heading reveal">
+        <p class="eyebrow">Option 2</p>
         <h2 class="display-2" style="font-size:1.8rem;">Send a booking request</h2>
         <p class="lead" style="font-size:1rem;">Tell us a bit about your needs and we'll follow up within one business day.</p>
       </div>
@@ -117,6 +148,28 @@
     </div>
   </section>
 
+  <section class="section">
+    <div class="container">
+      <div class="section-heading center reveal">
+        <p class="eyebrow">Option 3</p>
+        <h2 class="display-2" style="font-size:1.8rem;">Pay for a visit or package</h2>
+        <p class="lead" style="font-size:1rem; margin-left:auto; margin-right:auto;">Already scheduled? Pay securely online.</p>
+      </div>
+
+      <!--
+        PAYMENT LINK:
+        1. Create a free Stripe account at https://dashboard.stripe.com
+        2. Create a Payment Link for each service/package (Products > Payment Links)
+        3. Replace the href below with your real Stripe Payment Link URL.
+        No backend code is required — Stripe hosts the secure checkout page.
+      -->
+      <div style="text-align:center;" class="reveal">
+        <a class="btn btn-primary" href="https://buy.stripe.com/YOUR-PAYMENT-LINK" target="_blank" rel="noopener">Pay Online Securely</a>
+        <p class="form-note">Payments are processed securely by Stripe. See <a href="pricing.html">Pricing</a> for package details &mdash; including a note on what Medicare hospice may already cover.</p>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer class="site-footer">
@@ -141,7 +194,8 @@
       <div>
         <h4>Contact</h4>
         <ul>
-          <li><a href="tel:+12533267210">(253) 326-7210</a></li>
+          <li><a href="tel:+12534656704">(253) 465-6704</a></li>
+          <li><a href="mailto:hello@gentlebrooksbathing.com">hello@gentlebrooksbathing.com</a></li>
           <li>Mon&ndash;Sun, 7am&ndash;7pm</li>
         </ul>
       </div>
@@ -153,6 +207,6 @@
 </footer>
 
 <script src="assets/js/main.js"></script>
-<script src="assets/js/forms.js"></script>
+<script type="module" src="assets/js/forms.js"></script>
 </body>
 </html>
