@@ -82,10 +82,8 @@ backend code needed.
 ## Customizing
 
 - Colors and fonts live in `assets/css/style.css` under the `:root` section.
-- Phone number is set to the real number, (253) 326-7210. Email is still the
-  placeholder `hello@gentlebrooksbathing.com` — replace with your real
-  address everywhere (find & replace across all `.html` files) once you have
-  a domain/mailbox for it.
+- Phone number is set to the real number, (253) 465-6704. Email is set to
+  `support@gentlebrooksbathingservices.com`, matching the live domain.
 - Replace the sample testimonials on `index.html` with real ones once you have them —
   they're clearly marked as placeholders in an HTML comment. Don't publish invented
   quotes/names as if they're real client feedback.

@@ -50,7 +50,7 @@ Connected the **Gentle Brooks Bathing Service** static website (`C:\Users\Leigh\
 
 ## Known site content caveats (from README, still unaddressed)
 - `booking.html`: Calendly embed and Stripe payment link are both **placeholders** — need real Calendly account + event link, and real Stripe Payment Link.
-- Contact email `hello@gentlebrooksbathing.com` is a placeholder — not a real working inbox yet.
+- ~~Contact email `hello@gentlebrooksbathing.com` is a placeholder~~ — replaced site-wide with `support@gentlebrooksbathingservices.com`.
 - Two testimonials on `index.html` are explicitly marked as sample/placeholder copy — must not be presented as real quotes; replace with real ones (with permission) before wider promotion.
 - Pricing (`pricing.html`) uses the owner's real committed rates — no change needed there.
 
