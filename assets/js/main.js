@@ -1,3 +1,17 @@
+function showFormLoadFallback() {
+  ['booking-form', 'contact-form'].forEach(function (id) {
+    var form = document.getElementById(id);
+    if (!form || form.querySelector('.form-status')) return;
+    var status = document.createElement('p');
+    status.className = 'form-status form-note';
+    status.setAttribute('role', 'status');
+    status.style.color = '#B3261E';
+    status.style.fontWeight = '600';
+    status.textContent = 'Online submission is temporarily unavailable — please call us at (253) 465-6704 instead.';
+    form.appendChild(status);
+  });
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   var header = document.getElementById('siteHeader');
   var toggle = document.getElementById('navToggle');

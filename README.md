@@ -46,6 +46,14 @@ safe to expose client-side (that's what it's for), since RLS blocks anyone
 from reading other submissions through it. View submissions in the Supabase
 dashboard → Table Editor, or query them there directly.
 
+Every new row also triggers `supabase/functions/notify-form-submission`
+(a Supabase Edge Function) via a database trigger, which emails a summary
+to the owner through **Resend** — sending from `notifications@gentlebrooksbathingservices.com`,
+a verified domain in Resend. The webhook is authenticated with a shared
+secret stored in Supabase Vault (`form_notify_webhook_secret`); the
+function itself needs `RESEND_API_KEY` and `WEBHOOK_SECRET` set as
+Supabase Edge Function secrets to work.
+
 If you ever move off Supabase, `forms.js` is the only file that needs
 replacing — the HTML forms just need `id="booking-form"` / `id="contact-form"`
 kept in place.
@@ -82,10 +90,8 @@ backend code needed.
 ## Customizing
 
 - Colors and fonts live in `assets/css/style.css` under the `:root` section.
-- Phone number is set to the real number, (253) 326-7210. Email is still the
-  placeholder `hello@gentlebrooksbathing.com` — replace with your real
-  address everywhere (find & replace across all `.html` files) once you have
-  a domain/mailbox for it.
+- Phone number is set to the real number, (253) 465-6704. Email is set to
+  `support@gentlebrooksbathingservices.com`, matching the live domain.
 - Replace the sample testimonials on `index.html` with real ones once you have them —
   they're clearly marked as placeholders in an HTML comment. Don't publish invented
   quotes/names as if they're real client feedback.

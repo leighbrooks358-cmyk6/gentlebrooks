@@ -1,9 +1,21 @@
-import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
-
 const SUPABASE_URL = 'https://nihylsfrwtgaupbbjmdq.supabase.co';
 const SUPABASE_KEY = 'sb_publishable_BJwmqJJ7xMD2iCmU4vpLiA_QRhgGpqn';
 
-const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
+async function insertRow(table, payload) {
+  const res = await fetch(`${SUPABASE_URL}/rest/v1/${table}`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      apikey: SUPABASE_KEY,
+      Authorization: `Bearer ${SUPABASE_KEY}`,
+      Prefer: 'return=minimal',
+    },
+    body: JSON.stringify(payload),
+  });
+  if (!res.ok) {
+    throw new Error(`Insert into ${table} failed with status ${res.status}`);
+  }
+}
 
 function showFormStatus(form, message, isError) {
   let status = form.querySelector('.form-status');
@@ -39,14 +51,13 @@ function wireBookingForm() {
       notes: data.get('notes'),
     };
 
-    const { error } = await supabase.from('booking_requests').insert(payload);
-
-    if (error) {
-      showFormStatus(form, "Something went wrong sending your request — please call us instead at (253) 465-6704.", true);
-      submitBtn.disabled = false;
-    } else {
+    try {
+      await insertRow('booking_requests', payload);
       showFormStatus(form, "Thanks — your booking request was received. We'll follow up within one business day.", false);
       form.reset();
+    } catch (err) {
+      showFormStatus(form, "Something went wrong sending your request — please call us instead at (253) 465-6704.", true);
+    } finally {
       submitBtn.disabled = false;
     }
   });
@@ -68,14 +79,13 @@ function wireContactForm() {
       message: data.get('message'),
     };
 
-    const { error } = await supabase.from('contact_messages').insert(payload);
-
-    if (error) {
-      showFormStatus(form, "Something went wrong sending your message — please call us instead at (253) 465-6704.", true);
-      submitBtn.disabled = false;
-    } else {
+    try {
+      await insertRow('contact_messages', payload);
       showFormStatus(form, "Thanks — your message was received. We'll get back to you soon.", false);
       form.reset();
+    } catch (err) {
+      showFormStatus(form, "Something went wrong sending your message — please call us instead at (253) 465-6704.", true);
+    } finally {
       submitBtn.disabled = false;
     }
   });
