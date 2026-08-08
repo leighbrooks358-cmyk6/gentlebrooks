@@ -1,23 +1,22 @@
 # Gentle Brooks Bathing Service — Full Service & Price List
 
-Finalized 2026-07-25; tiers rebuilt 2026-07-25 to match standard CNA bed-bath scope. Companion to the printed plan — covers every service offered, individually priced.
+Finalized 2026-07-25; tiers rebuilt 2026-07-25 to match standard CNA bed-bath scope. Consolidated 2026-08-02 from 4 tiers to 3 (Basic/Deluxe merged concept became Essential; Supreme renamed and repriced to Signature). Companion to the printed plan — covers every service offered, individually priced.
 
-## Core Bath Packages (rebuilt 2026-07-25 — matches pricing.html)
+## Core Bath Packages (consolidated 2026-08-02 — matches pricing.html)
 
-Basic is now a genuine standard complete bed bath (per CNA training standards — full body wash, hair wash, perineal care, basic nail trim, shaving, and oral care are all baseline, not upsells). Deluxe adds comfort extras. Supreme is where the visit switches from basin bathing to the actual inflatable tub & shower kit for a real soak-and-rinse bath, plus extended/spa-level nail care. Complete Comfort adds aromatherapy, oral comfort care (dry mouth/lip comfort), and the full bed/clothing turnover on top of Supreme.
+Essential is a genuine standard complete bed bath (per CNA training standards — full body wash, hair wash, perineal care, basic nail trim, shaving, and oral care are all baseline, not upsells). Signature is where the visit switches from basin bathing to the actual inflatable tub & shower kit for a real soak-and-rinse bath, plus comfort extras (lotion massage, hair conditioning) and extended/spa-level nail care — this tier carries forward the old Supreme tier's contents at a new price. Complete Comfort adds aromatherapy, oral comfort care (dry mouth/lip comfort), and the full bed/clothing turnover on top of Signature; contents unchanged from the prior structure.
 
 | Service | Price | What's Included | Approx. Time |
 |---|---|---|---|
-| Basic Bath | $95 / visit | Full in-bed body wash & perineal care, hair wash with shampoo, basic nail trim (fingers & toes), shaving/basic grooming, oral hygiene care, skin & pressure-point check, fresh linens — basin & washcloths | 45–60 min |
-| Deluxe Bath | $120 / visit | Everything in Basic + warm lotion massage, hair conditioning treatment — basin & washcloths | 75–90 min |
-| Supreme Bath | $145 / visit | Everything in Deluxe + switches to our private inflatable tub & shower kit for a true soak-and-rinse bath, extended nail care (soak, cuticle care & lotion) | 90–120 min |
-| Complete Comfort Bath | $200 / visit (flat) | Everything in Supreme + calming aromatherapy, oral comfort care for dry mouth & lip comfort, full linen change, help into clean clothes, gentle repositioning for comfort | ~2 hours |
+| Essential Comfort Bath | $95 / visit | Full in-bed body wash & perineal care, hair wash with shampoo, basic nail trim (fingers & toes), shaving/basic grooming, oral hygiene care, skin & pressure-point check, fresh linens — basin & washcloths | 45–60 min |
+| Signature Comfort Bath | $150 / visit | Everything in Essential + warm lotion massage, hair conditioning, switches to our private inflatable tub & shower kit for a true soak-and-rinse bath, extended nail care (soak, cuticle care & lotion) | 90–120 min |
+| Complete Comfort Bath | $200 / visit (flat) | Everything in Signature + calming aromatherapy, oral comfort care for dry mouth & lip comfort, full linen change, help into clean clothes, gentle repositioning for comfort | ~2 hours |
 
 ## Recurring Plan (confirmed — matches pricing.html)
 
 | Plan | Price | Notes |
 |---|---|---|
-| 2 Baths a Week | $150 / week | Built on Basic Bath tier; upgrade any visit to Deluxe/Supreme for the price difference |
+| 2 Baths a Week | $150 / week | Built on Essential Comfort Bath tier; upgrade any visit to Signature/Complete Comfort for the price difference |
 | Daily / Higher Frequency | Custom quote | 3+ visits/week or daily, for higher-need or end-of-life care |
 
 ## À La Carte Add-On Services (updated 2026-07-25)
