@@ -131,27 +131,27 @@
     </div>
   </section>
 
-  <section class="section">
-    <div class="container">
-      <div class="section-heading center reveal">
-        <p class="eyebrow">Option 3</p>
-        <h2 class="display-2" style="font-size:1.8rem;">Pay for a visit or package</h2>
-        <p class="lead" style="font-size:1rem; margin-left:auto; margin-right:auto;">Already scheduled? Pay securely online.</p>
+  <!--
+    ONLINE PAYMENT: removed 2026-08-07 — the "Pay Online Securely" button
+    pointed at a fake placeholder Stripe URL (buy.stripe.com/YOUR-PAYMENT-LINK)
+    and would 404 if clicked. Re-add once a real Stripe Payment Link exists:
+    1. Create a free Stripe account at https://dashboard.stripe.com
+    2. Create a Payment Link for each service/package (Products > Payment Links)
+    3. Put the real URL in the href below.
+    <section class="section">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="eyebrow">Option 3</p>
+          <h2 class="display-2" style="font-size:1.8rem;">Pay for a visit or package</h2>
+          <p class="lead" style="font-size:1rem; margin-left:auto; margin-right:auto;">Already scheduled? Pay securely online.</p>
+        </div>
+        <div style="text-align:center;" class="reveal">
+          <a class="btn btn-primary" href="https://buy.stripe.com/REAL-LINK" target="_blank" rel="noopener">Pay Online Securely</a>
+          <p class="form-note">Payments are processed securely by Stripe. See <a href="pricing.html">Pricing</a> for package details &mdash; including a note on what Medicare hospice may already cover.</p>
+        </div>
       </div>
-
-      <!--
-        PAYMENT LINK:
-        1. Create a free Stripe account at https://dashboard.stripe.com
-        2. Create a Payment Link for each service/package (Products > Payment Links)
-        3. Replace the href below with your real Stripe Payment Link URL.
-        No backend code is required — Stripe hosts the secure checkout page.
-      -->
-      <div style="text-align:center;" class="reveal">
-        <a class="btn btn-primary" href="https://buy.stripe.com/YOUR-PAYMENT-LINK" target="_blank" rel="noopener">Pay Online Securely</a>
-        <p class="form-note">Payments are processed securely by Stripe. See <a href="pricing.html">Pricing</a> for package details &mdash; including a note on what Medicare hospice may already cover.</p>
-      </div>
-    </div>
-  </section>
+    </section>
+  -->
 
 </main>
 
